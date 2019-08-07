@@ -7,12 +7,12 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Christophe Coevoet",
-            "email": "stof@notk.org"
-        },
-        {
             "name": "Antishov Viktor",
             "email": "antishov.viktor@gmail.com"
+        },
+        {
+            "name": "Christophe Coevoet",
+            "email": "stof@notk.org"
         }
     ],
     "require": {
