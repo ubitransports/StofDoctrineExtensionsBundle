@@ -1,14 +1,18 @@
 {
-    "name": "stof/doctrine-extensions-bundle",
+    "name": "antishov/doctrine-extensions-bundle",
     "type": "symfony-bundle",
-    "description": "Integration of the gedmo/doctrine-extensions with Symfony2",
-    "keywords": ["tree", "behaviors", "doctrine2", "extensions", "gedmo", "sluggable","loggable", "translatable", "nestedset", "sortable", "timestampable"],
-    "homepage": "https://github.com/stof/StofDoctrineExtensionsBundle",
+    "description": "Forked from stof/doctrine-extensions-bundle integration of the gedmo/doctrine-extensions with Symfony2",
+    "keywords": ["tree", "behaviors", "doctrine2", "extensions", "gedmo", "sluggable","loggable", "translatable", "nestedset", "sortable", "timestampable", "stoof"],
+    "homepage": "https://github.com/antishov/StofDoctrineExtensionsBundle",
     "license": "MIT",
     "authors": [
         {
             "name": "Christophe Coevoet",
             "email": "stof@notk.org"
+        },
+        {
+            "name": "Antishov Viktor",
+            "email": "antishov.viktor@gmail.com"
         }
     ],
     "require": {
