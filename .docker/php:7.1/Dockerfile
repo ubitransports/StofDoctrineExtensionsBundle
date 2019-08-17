@@ -1,10 +1,9 @@
-FROM php:7.3.7-fpm
+FROM php:7.1-cli
 
 RUN apt-get update && apt-get install -y \
     curl \
     libzip-dev \
     zip \
-    git \
 && docker-php-ext-configure zip --with-libzip \
 && docker-php-ext-install \
     zip \
@@ -14,6 +13,10 @@ RUN apt-get update && apt-get install -y \
 && docker-php-ext-enable \
     xdebug
 
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+COPY . /var/php
+WORKDIR /var/php
 
-CMD ["php-fpm"]
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
+    composer update --prefer-dist --no-interaction
+
+CMD ["./vendor/bin/simple-phpunit", "-v"]
