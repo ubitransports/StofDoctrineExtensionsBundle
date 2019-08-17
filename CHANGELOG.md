@@ -1,3 +1,14 @@
+## 1.4.0 (2019-08-07)
+
+Features:
+
+* Added docker
+
+Bugfixes:
+
+* Fixed deprecations by Symfony 4.2
+* Fixed Travis builds
+
 ## 1.3.0 (2017-12-24)
 
 Features:
