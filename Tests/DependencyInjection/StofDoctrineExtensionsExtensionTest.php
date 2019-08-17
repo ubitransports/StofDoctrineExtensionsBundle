@@ -101,4 +101,27 @@ class StofDoctrineExtensionsExtensionTest extends TestCase
         $this->assertCount(1, $def->getTag('doctrine.event_subscriber'));
         $this->assertCount(1, $def->getTag('doctrine_mongodb.odm.event_subscriber'));
     }
+
+    public function testUploadableDefaultPath()
+    {
+        $extension = new StofDoctrineExtensionsExtension();
+        $container = new ContainerBuilder();
+
+        $config = [
+            'orm' => [
+                'default' => ['uploadable' => true],
+            ],
+            'uploadable' => ['default_file_path' => __DIR__]
+        ];
+
+        $extension->load([$config], $container);
+
+        $definition = $container->getDefinition('stof_doctrine_extensions.listener.uploadable');
+
+        $methodCalls = array_column($definition->getMethodCalls(), 1, 0);
+
+        $this->assertArrayHasKey('setDefaultPath', $methodCalls);
+        $this->assertArrayHasKey(0, $methodCalls['setDefaultPath']);
+        $this->assertEquals(__DIR__, $methodCalls['setDefaultPath'][0]);
+    }
 }
