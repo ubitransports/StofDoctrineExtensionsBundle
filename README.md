@@ -8,10 +8,16 @@ your Symfony Project
 [![Latest Stable Version](https://poser.pugx.org/antishov/doctrine-extensions-bundle/v/stable.png)](https://packagist.org/packages/antishov/doctrine-extensions-bundle)
 [![Build Status](https://travis-ci.com/antishov/StofDoctrineExtensionsBundle.svg?branch=master)](https://travis-ci.com/antishov/StofDoctrineExtensionsBundle)
 
+### Installation
+
+```
+composer require antishov/doctrine-extensions-bundle
+```
+
 ### Requirements
 
 * The minimum required PHP is 7.1
-* Symfony 4.3
+* Symfony 4.3 or greater
 
 ### Contributing
 
