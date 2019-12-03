@@ -3,8 +3,8 @@ services:
   php7.1:
     build:
       context: .
-      dockerfile: ./.docker/php:7.1/Dockerfile
+      dockerfile: ./.docker/php7.1/Dockerfile
   php7.2:
     build:
       context: .
-      dockerfile: ./.docker/php:7.2/Dockerfile
+      dockerfile: ./.docker/php7.2/Dockerfile
