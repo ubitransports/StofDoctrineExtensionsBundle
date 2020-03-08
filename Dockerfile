@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
 && docker-php-ext-enable \
     xdebug
 
-COPY .docker/php7.2 /var/php
+COPY . /var/php
 WORKDIR /var/php
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
