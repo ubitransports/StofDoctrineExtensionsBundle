@@ -1,16 +1,16 @@
 version: "3.3"
 services:
-  phpunit7.1:
+  phpunit7.3:
     entrypoint: ./vendor/bin/simple-phpunit -v
     build:
       context: .
       dockerfile: Dockerfile
       args:
-        php_version: 7.1
-  phpunit7.2:
+        php_version: 7.3
+  phpunit7.4:
     entrypoint: ./vendor/bin/simple-phpunit -v
     build:
       context: .
       dockerfile: Dockerfile
       args:
-        php_version: 7.2
+        php_version: 7.4

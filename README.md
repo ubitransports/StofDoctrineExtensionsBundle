@@ -49,8 +49,8 @@ return [
 
 ## Requirements
 
-* The minimum required PHP is 7.1
-* Symfony 4.3 or greater
+* The minimum required PHP is 7.3
+* Symfony 4.4 or greater
 
 ## Contributing
 
