@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     zip \
     pdo_mysql \
 && pecl install \
-    xdebug-2.8.0beta1 \
+    xdebug-2.9.2 \
 && docker-php-ext-enable \
     xdebug
 
