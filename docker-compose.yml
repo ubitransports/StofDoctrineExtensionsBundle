@@ -3,7 +3,7 @@ services:
   composer:
     command: composer update --prefer-lowest --no-interaction
     volumes:
-    - .:/var/php
+      - .:/var/php
     build:
       context: .
       dockerfile: Dockerfile
