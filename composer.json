@@ -15,7 +15,7 @@
             "email": "stof@notk.org"
         }
     ],
-    "conflict": {
+    "replace": {
         "stof/doctrine-extensions-bundle": "*"
     },
     "require": {
