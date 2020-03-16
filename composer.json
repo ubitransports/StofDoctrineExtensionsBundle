@@ -16,7 +16,7 @@
         }
     ],
     "replace": {
-        "stof/doctrine-extensions-bundle": "*"
+        "stof/doctrine-extensions-bundle": "self.version"
     },
     "require": {
         "php": ">=7.3",
