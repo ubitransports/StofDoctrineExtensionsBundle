@@ -49,7 +49,7 @@ return [
 
 ## Requirements
 
-* The minimum required PHP is 7.3
+* The minimum required PHP is 7.2.5
 * Symfony 4.4 or greater
 
 ## Contributing
