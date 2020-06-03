@@ -21,6 +21,7 @@
     "require": {
         "php": ">=7.1",
         "symfony/framework-bundle": "^4.3|^5.0",
+        "symfony/mime": "^4.3|^5.0",
         "gedmo/doctrine-extensions": "^2.3.4"
     },
     "require-dev": {
