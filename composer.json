@@ -15,18 +15,18 @@
             "email": "stof@notk.org"
         }
     ],
-    "conflict": {
-        "stof/doctrine-extensions-bundle": "*"
+    "replace": {
+        "stof/doctrine-extensions-bundle": "self.version"
     },
     "require": {
-        "php": ">=7.1",
-        "symfony/framework-bundle": "^4.3|^5.0",
+        "php": "^7.2.5",
         "symfony/mime": "^4.3|^5.0",
+        "symfony/framework-bundle": "^4.4|^5.0",
         "gedmo/doctrine-extensions": "^2.3.4"
     },
     "require-dev": {
-        "symfony/phpunit-bridge": "^4.3|^5.0",
-        "symfony/security-bundle": "^4.3|^5.0"
+        "symfony/phpunit-bridge": "^4.4|^5.0",
+        "symfony/security-bundle": "^4.4|^5.0"
     },
     "suggest": {
         "doctrine/doctrine-bundle": "to use the ORM extensions",
