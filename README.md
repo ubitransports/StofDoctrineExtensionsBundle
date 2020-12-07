@@ -56,7 +56,7 @@ return [
 
 Run tests in docker for an all supported versions of PHP:
 ```
-$ docker-compose -f docker-compose.test.yml up
+$ docker-compose -f docker-compose.tests.yml up
 ```
 
 Pull-requests and issues are welcomed.
