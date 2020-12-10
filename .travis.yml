@@ -10,14 +10,14 @@ matrix:
     # Minimum supported dependencies with the latest and oldest PHP version
     - php: "7.2.5"
       env: SYMFONY_VERSION="^4.4" COMPOSER_FLAGS="--prefer-lowest"
-    - php: "8"
+    - php: "8.0"
       env: SYMFONY_VERSION="^4.4" COMPOSER_FLAGS="--prefer-lowest"
 
     # Test the latest stable release
     - php: "7.2.5"
     - php: "7.3"
     - php: "7.4"
-    - php: "8"
+    - php: "8.0"
       env: XDEBUG_MODE=coverage COVERAGE=true PHPUNIT_FLAGS="--coverage-text"
 
 sudo: false
