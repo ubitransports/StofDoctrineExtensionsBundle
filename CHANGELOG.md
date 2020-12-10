@@ -1,3 +1,31 @@
+## 1.4.3 (2020-12-12)
+
+Features:
+
+* PHP 8 support
+* Doctrine 3 support
+
+Bugfixes:
+
+* Fixed uploadable extension
+
+## 1.4.2 (2019-12-4)
+
+Bugfixes:
+
+* Fixed crashes in Windows on invalid directory name
+
+## 1.4.1 (2019-11-27)
+
+Features:
+
+* Symfony 5 support
+* Removed PHP 5 and Symfony 2 & 3 support
+
+Bugfixes:
+
+* Deprecation fixes
+
 ## 1.4.0 (2019-08-07)
 
 Features:
